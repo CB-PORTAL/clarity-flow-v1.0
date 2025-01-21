@@ -1,50 +1,72 @@
-# React + TypeScript + Vite
+# ClarityFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Bring clarity to chaos with AI-powered task management.
 
-Currently, two official plugins are available:
+## 🌟 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ClarityFlow is a modern task management application that combines the power of AI with intuitive design to help users organize their thoughts, prioritize tasks, and maintain productivity. Built with React, TypeScript, and cutting-edge AI technology, ClarityFlow offers a seamless experience for managing daily tasks and long-term projects.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Smart Task Prioritization**: AI-powered suggestions for task priority
+- **Drag & Drop Interface**: Intuitive task reordering and status updates
+- **Real-time Updates**: Instant saves and updates using local storage
+- **Priority Visualization**: Clear visual indicators for task importance
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend**: React + TypeScript
+- **State Management**: React Hooks + Context
+- **Styling**: TailwindCSS
+- **Drag & Drop**: @dnd-kit/core
+- **AI Integration**: OpenAI API (optional)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/CB-PORTAL/clarity-flow-v1.0.git
+cd clarity-flow
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+## 📖 Usage
+
+1. Create a new task using the "+" button
+2. Set task priority and details
+3. Drag and drop to reorder tasks
+4. Mark tasks as complete when done
+5. Use AI suggestions for better task management
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Thanks to all contributors who have helped shape ClarityFlow
+- Special thanks to the React and TypeScript communities
+
+## 🌐 Links
+
+- [Live Demo](https://clarityflow.vercel.app) (Coming Soon)
+- [Documentation](https://github.com/CB-PORTAL/clarity-flow-v1.0/wiki) (In Progress)
+- [Report Issues](https://github.com/CB-PORTAL/clarity-flow-v1.0/issues)
+
+---
+
+Made with ❤️ by [Devon Williams](https://github.com/CB-PORTAL)
